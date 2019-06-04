@@ -14,6 +14,9 @@
 - 首页热门图书数据: `/hotData`
 - 列表页数据: `/listData`
 
+## 尚帅
+- shangshuai；Bookheader
+
 ## Project setup
 ```
 npm install
