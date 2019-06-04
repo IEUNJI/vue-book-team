@@ -11,3 +11,7 @@ export function getBanner() {
 export function getHot() {
   return axios.get('/hotData')
 }
+
+export function getList(){
+  return axios.get('/listData')
+}
