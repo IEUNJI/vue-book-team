@@ -9,7 +9,7 @@
       <span>￥{{ data.bookPrice }}</span>
       <div class="btnBox">
         <i class="del" @click="del(data)">删除</i>
-        <i class="collect" @click="collect(data)">收藏</i>
+        <i class="collect" @click="collect(data)" v-if="isShowCollect">收藏</i>
       </div>
     </div>
   </div>
@@ -17,7 +17,12 @@
 
 <script>
 export default {
-  props: ['data'],
+  props: {
+    data:{},
+    isShowCollect:{
+      default:true
+    }
+  },
   methods: {
     del(data) {
       this.$emit('del', data)

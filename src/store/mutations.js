@@ -20,3 +20,8 @@ export function collectList(state, options) {
 export function addData(state, options) {
     state.listData.unshift(options);
 }
+export function removeCollect(state, options) {
+    state.collectData = state.collectData.filter(item => {
+        return item.bookId != options.bookId
+    })
+}
