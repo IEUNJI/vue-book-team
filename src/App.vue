@@ -1,6 +1,11 @@
 <template>
   <div>
-    <router-view></router-view>
+    <!-- 根据路由原信息(meta: { keepAlive: true })，对页面进行缓存 -->
+    <keep-alive>
+      <router-view v-if="$route.meta.keepAlive"></router-view>
+    </keep-alive>
+    <router-view v-if="!$route.meta.keepAlive"></router-view>
+
     <router-link to="/home">Home</router-link>
     <router-link to="/list">List</router-link>
     <router-link to="/collect">Collect</router-link>
@@ -17,6 +22,6 @@ export default {
 <style lang="less" scoped>
 // 暂时调小字体
 a {
-  font-size: .4rem;
+  font-size: 0.4rem;
 }
 </style>
