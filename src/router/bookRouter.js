@@ -15,7 +15,9 @@ export default [
   {
     path: '/list',
     name: 'list',
-    meta: {},
+    meta: {
+      keepAlive: true
+    },
     component: () => import('../views/List/List.vue')
   },
   {

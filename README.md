@@ -8,7 +8,7 @@
 - 列表 `icon-liebiao`
 
 ## API
-
+ 
 - Base URL: `https://www.easy-mock.com/mock/5cf23614830e6440fc3b77fe/api`
 - 首页轮播图数据: `/bannerData`
 - 首页热门图书数据: `/hotData`
@@ -18,6 +18,9 @@
  - 待完善
 
  
+## 田成风
+
+- 待完善
 ## 林子峻
 
 - Home.vue (首页组件)
