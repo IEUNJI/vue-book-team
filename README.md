@@ -16,7 +16,8 @@
 
 ## 林子峻
 
-- 待完善
+- Home.vue (首页组件)
+  - HomeSwiper.vue (首页轮播图组件)
 
 ## Project setup
 ```

@@ -15,5 +15,8 @@ export default {
 </script>
 
 <style lang="less" scoped>
-
+// 暂时调小字体
+a {
+  font-size: .4rem;
+}
 </style>
