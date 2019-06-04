@@ -20,6 +20,7 @@
   - HomeSwiper.vue (首页轮播图组件)
   - HomeHot.vue (首页热门图书组件)
   - HomeHotItem.vue (首页热门图书item组件)
+  - ListItem.vue (列表页item组件)
 
 ## Project setup
 ```
