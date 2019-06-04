@@ -21,7 +21,17 @@ export default {
     item
   },
   methods: {
-    add() {}
+    add() {
+      this.$store.commit("addData", {
+        bookCover:
+          "https://img14.360buyimg.com/n1/jfs/t733/236/713204451/71588/7e62c286/54d332abN7e74cb0b.jpg",
+        bookId: Math.random(),
+        bookInfo: this.desc,
+        bookName: this.name,
+        bookPrice: this.price
+      });
+      this.$router.push("/list");
+    }
   }
 };
 </script>
