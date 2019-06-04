@@ -6,7 +6,10 @@ export default [
   {
     path: '/home',
     name: 'home',
-    meta: {},
+    meta: {
+      // 路由原信息：是否缓存页面
+      keepAlive: true
+    },
     component: () => import('../views/Home/Home.vue')
   },
   {
