@@ -1,9 +1,12 @@
 <template>
-  <div class="form-box">
-    <item placeholder="书的名字" v-model="name">书的名字</item>
-    <item placeholder="书的信息" v-model="desc">书的信息</item>
-    <item placeholder="书的价格" v-model="price">书的价格</item>
-    <button @click="add">添加</button>
+  <div class="box">
+    <book-header>Add</book-header>
+    <div class="form-box">
+      <item placeholder="书的名字" v-model="name">书的名字</item>
+      <item placeholder="书的信息" v-model="desc">书的信息</item>
+      <item placeholder="书的价格" v-model="price">书的价格</item>
+      <button @click="add">添加</button>
+    </div>
   </div>
 </template>
 
@@ -50,5 +53,8 @@ export default {
     font-size: 0.4rem;
     outline: none;
   }
+}
+.box {
+  padding: 1rem 0;
 }
 </style>

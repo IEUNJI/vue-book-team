@@ -24,5 +24,6 @@
         line-height: 1rem;
         background: salmon;
         color: #fff;
+        font-size: .4rem;
     }
 </style>

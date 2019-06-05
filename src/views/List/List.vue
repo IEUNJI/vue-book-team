@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <div class="box">
+    <book-header>List</book-header>
     <div>
       <item v-for="item in list" :key="item.bookId" :data='item' @del='del' @collect='collect'></item>
     </div>
@@ -31,3 +32,9 @@ export default {
   },
 }
 </script>
+
+<style lang="less" scoped>
+.box {
+  padding: 1rem 0;
+}
+</style>

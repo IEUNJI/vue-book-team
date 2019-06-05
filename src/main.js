@@ -11,6 +11,10 @@ import './less/common.less';
 // 导入Swiper样式
 import 'swiper/dist/css/swiper.css'
 
+// 注册Header (头部) 为全局组件
+import BookHeader from './compent/Bookheader.vue'
+Vue.component('BookHeader', BookHeader)
+
 new Vue({
   render: h => h(App),
   router,

@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <div class="box">
+    <book-header>Home</book-header>
     <home-swiper :data="bannerData"></home-swiper>
     <home-hot :data="hotData"></home-hot>
   </div>
@@ -34,5 +35,7 @@ export default {
 </script>
 
 <style lang="less" scoped>
-
+.box {
+  padding: 1rem 0;
+}
 </style>
