@@ -15,12 +15,14 @@
 - 列表页数据: `/listData`
 
 ## 李芙蓉
- - 待完善
-
+- Add.vue (添加页组件)
+  - item.vue (添加页输入框组件)
  
 ## 田成风
 
-- 待完善
+- List.vue (列表页组件)
+- Collect.vue (收藏页组件)
+
 ## 林子峻
 
 - Home.vue (首页组件)
@@ -28,8 +30,9 @@
   - HomeHot.vue (首页热门图书组件)
   - HomeHotItem.vue (首页热门图书item组件)
   - ListItem.vue (列表页item组件)
+
 ## 尚帅
-- shangshuai；Bookheader
+- Bookheader.vue (头部组件)
 
 ## Project setup
 ```
