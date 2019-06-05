@@ -28,6 +28,8 @@
   - HomeHot.vue (首页热门图书组件)
   - HomeHotItem.vue (首页热门图书item组件)
   - ListItem.vue (列表页item组件)
+## 尚帅
+- shangshuai；Bookheader
 
 ## Project setup
 ```
