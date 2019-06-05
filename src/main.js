@@ -15,6 +15,12 @@ import 'swiper/dist/css/swiper.css'
 import BookHeader from './compent/Bookheader.vue'
 Vue.component('BookHeader', BookHeader)
 
+// 注册全局过滤器
+import filters from './filter/filter.js'
+filters.forEach(filter => {
+  Vue.filter(filter.name, filter)
+})
+
 new Vue({
   render: h => h(App),
   router,

@@ -6,7 +6,7 @@
     <div class="infoBox">
       <h2>{{ data.bookName }}</h2>
       <p>{{ data.bookInfo }}</p>
-      <span>￥{{ data.bookPrice }}</span>
+      <span>{{ data.bookPrice | handleMoney}}</span>
       <div class="btnBox">
         <i class="del" @click="del(data)">删除</i>
         <i class="collect" @click="collect(data)" v-if="isShowCollect">收藏</i>
