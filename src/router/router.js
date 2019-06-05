@@ -4,7 +4,7 @@ import bookRouter from './bookRouter.js'
 
 Vue.use(VueRouter)
 
-export default new VueRouter({
+const router = new VueRouter({
   mode: 'history',
   routes: [
     ...bookRouter,
@@ -14,3 +14,11 @@ export default new VueRouter({
     }
   ]
 })
+
+// 注册路由全局前置守卫，更改title信息
+router.beforeEach((to, from, next) => {
+  document.title = to.meta.title || 'vue-book-team'
+  next()
+})
+
+export default router

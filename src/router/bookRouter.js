@@ -8,7 +8,8 @@ export default [
     name: 'home',
     meta: {
       // 路由原信息：是否缓存页面
-      keepAlive: true
+      keepAlive: true,
+      title: 'Home'
     },
     component: () => import('../views/Home/Home.vue')
   },
@@ -16,20 +17,25 @@ export default [
     path: '/list',
     name: 'list',
     meta: {
-      keepAlive: true
+      keepAlive: true,
+      title: 'List'
     },
     component: () => import('../views/List/List.vue')
   },
   {
     path: '/collect',
     name: 'collect',
-    meta: {},
+    meta: {
+      title: 'Collect'
+    },
     component: () => import('../views/Collect/Collect.vue')
   },
   {
     path: '/add',
     name: 'add',
-    meta: {},
+    meta: {
+      title: 'Add'
+    },
     component: () => import('../views/Add/Add.vue')
   }
 ]
