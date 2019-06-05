@@ -6,16 +6,16 @@
     </keep-alive>
     <router-view v-if="!$route.meta.keepAlive"></router-view>
 
-    <router-link to="/home">Home</router-link>
-    <router-link to="/list">List</router-link>
-    <router-link to="/collect">Collect</router-link>
-    <router-link to="/add">Add</router-link>
+    <base-tab></base-tab>
   </div>
 </template>
 
 <script>
+import BaseTab from './compent/BaseTab.vue'
 export default {
-  
+  components: {
+    BaseTab
+  }
 }
 </script>
 
